@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Add Doctor</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/homestyle.css">
+
+<style>
+body {
+	font: 1em Helvetica;
+}
+
+#container {
+	width: 700px;
+	margin: 25px auto;
+}
+
+.whysign {
+	float: left;
+	background-color: white;
+	width: 2px;
+	height: 330px;
+	border-radius: 0 5px 5px 0;
+	padding-top: 20px;
+	padding-right: 20px;
+}
+
+.signup {
+	float: left;
+	width: 300px;
+	padding: 30px 20px;
+	background-color: white;
+	text-align: center;
+	border-radius: 5px 0 0 5px;
+}
+
+[type=text] {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	border: 0;
+	border-bottom: 1px solid rgba(0, 0, 0, .2);
+	height: 45px;
+	line-height: 45px;
+	margin-bottom: 10px;
+	font-size: 1em;
+	color: rgba(0, 0, 0, .4);
+}
+
+[type=email] {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	border: 0;
+	border-bottom: 1px solid rgba(0, 0, 0, .2);
+	height: 45px;
+	line-height: 45px;
+	margin-bottom: 10px;
+	font-size: 1em;
+	color: rgba(0, 0, 0, .4);
+}
+
+[type=password] {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	border: 0;
+	border-bottom: 1px solid rgba(0, 0, 0, .2);
+	height: 45px;
+	line-height: 45px;
+	margin-bottom: 10px;
+	font-size: 1em;
+	color: rgba(0, 0, 0, .4);
+}
+
+[type=date] {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	border: 0;
+	border-bottom: 1px solid rgba(0, 0, 0, .2);
+	height: 45px;
+	line-height: 45px;
+	margin-bottom: 10px;
+	font-size: 1em;
+	color: rgba(0, 0, 0, .4);
+}
+
+[type=submit] {
+	margin-top: 25px;
+	width: 80%;
+	border: 0;
+	background-color: #53CACE;
+	border-radius: 5px;
+	height: 50px;
+	color: white;
+	font-weight: 400;
+	font-size: 1em;
+}
+
+[type=reset] {
+	margin-top: 25px;
+	width: 80%;
+	border: 0;
+	background-color: #53CACE;
+	border-radius: 5px;
+	height: 50px;
+	color: white;
+	font-weight: 400;
+	font-size: 1em;
+}
+
+[type='text']:focus {
+	outline: none;
+	border-color: #53CACE;
+}
+
+[type='date']:focus {
+	outline: none;
+	border-color: #53CACE;
+}
+
+[type='email']:focus {
+	outline: none;
+	border-color: #53CACE;
+}
+
+[type='password']:focus {
+	outline: none;
+	border-color: #53CACE;
+}
+
+h1 {
+	color: rgba(0, 0, 0, .7);
+	font-weight: 900;
+	font-size: 2.5em;
+}
+
+p {
+	color: rgba(0, 0, 0, .6);
+	font-size: 1.2em;
+	margin: 50px 0 50px 0;
+}
+
+span {
+	font-size: .75em;
+	background-color: white;
+	padding: 2px 5px;
+	color: rgba(0, 0, 0, .6);
+	border-radius: 2px;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+	margin: 5px;
+}
+
+span:hover {
+	color: #53CACE;
+}
+
+p:nth-of-type(2) {
+	font-size: 1em;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+	font-family: "Lato", sans-serif
+}
+
+.w3-bar, h1, button {
+	font-family: "Montserrat", sans-serif
+}
+
+.fa-anchor, .fa-coffee {
+	font-size: 200px
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<!-- Navbar -->
+		<div class="w3-top">
+			<div class="w3-bar w3-red w3-card w3-left-align w3-large">
+				<a
+					class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
+					href="javascript:void(0);" onclick="myFunction()"
+					title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+				<h2 class="w3-bar-item w3-hide-small w3-padding-large ">Add
+					Vetirinery Doctor</h2>
+			</div>
+
+		</div>
+		<!-- Header -->
+		<header class="w3-container w3-red w3-center"
+			style="padding: 128px 16px">
+
+			<!-- 			<form action="AddDoctorServlet" method="post">
+ -->
+			<div id='container'>
+				<div class='signup'>
+					<h2 style="color: #53CACE">
+						<u>Register Here</u>
+					</h2>
+					<div style="font: 1em Helvetica">
+						<form action="AddDoctorServlet" method="post">
+							<input type='text' placeholder='Name :' / id="name" name="name"><br>
+							<input type='text' placeholder='Address :' / id="address"
+								name="address"> <br> <input type='text'
+								placeholder='Phone:' / id="phone" name="phone"> <br>
+							<input type='email' placeholder='Email :' /id="email"
+								name="email"> <br> <input type="text"
+								placeholder='Location :' / id="location" name="location">
+							<br> <input type="text" placeholder='Experience'
+								/id="experience" name="experience"> <br> <input
+								type='submit' id="save" value="Save"> <br> <input
+								type='reset' placeholder='RESET' /id="reset"><br>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- </form> -->
+		</header>
+	</div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="./css/registration.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Registration</title>
+<style>
+body {
+	background-color: #f44336;
+	/* 	background-image: url('./images/reg.png');
+	background-repeat: no-repeat;
+	background-size: 100% 110%; */
+}
+
+ /* .signup {
+	background-position: center; display : block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid aqua;
+	padding: 10px;
+	display: block;
+}  */
+</style>
+</head>
+<body>
+
+	<div class="container">
+
+		<div id='container'>
+
+			<div class='signup'>
+
+				<form action="SaveServlet" method="post">
+
+
+					<h2 style="color: #53CACE; text-align: center;">
+						<u>Registration Here</u>
+
+					</h2>
+					<label style="margin-left: 30px; color: #53CACE;"> <b>Name</b>
+					</label> <input type='text' placeholder='Enter your name' id="name"
+						name="name"> <label
+						style="margin-left: 30px; color: #53CACE;"> <b>Age</b>
+					</label> <input type="date" placeholder='Enter your age :' id="age"
+						name="age">
+
+					<div
+						style="text-align: left; display: inline; width: 250px; margin-left: 28px; font: 1em Helvetica; color: rgba(0, 0, 0, .6); font-size: 1.2em;">
+						<label for="gender"
+							style="text-align: left; margin-left: 3px; margin-right: 950px; color: #53CACE;"><b>Gender</b>
+						</label><br> <br> <input type="radio" name="gender" value="male"
+							style="margin-left: 30px;"> Male <input type="radio"
+							name="gender" value="female"> Female <input type="radio"
+							name="gender" value="other"> Other<br> <br>
+
+
+
+
+					</div>
+					<label style="margin-left: 30px; color: #53CACE;"> <b>Address</b>
+					</label> <input type='text' placeholder='Enter your address' / id="address"
+						name="address"> <label
+						style="margin-left: 30px; color: #53CACE;"> <b>Phone
+							no</b>
+					</label> <input type="tel" placeholder='Enter your phone no' / id="phone"
+						name="phone"> <label
+						style="margin-left: 30px; color: #53CACE;"> <b>Email</b>
+					</label> <input type='email' placeholder='Enter your email' /id="email"
+						name="email"> <input type="text"
+						placeholder='Enter your location' / id="location" name="location">
+					<label style="margin-left: 30px; color: #53CACE;"> <b>Password</b>
+					</label> <input type="password" placeholder='Enter your password'
+						/id="password" name="password"> <input type='submit'
+						id="save" value="save" style="margin-left: 30px;"> <input
+						type='reset' placeholder='RESET' /id="reset"
+						style="margin-left: 30px;">
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
